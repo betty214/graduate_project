@@ -1,0 +1,7 @@
+CREATE TABLE `graduate`.`courses` (
+  `idcourses` INT NOT NULL,
+  `course_name` VARCHAR(200) NOT NULL,
+  `course_number` INT NOT NULL,
+  `c_hour` FLOAT NULL,
+  `credit` INT NULL,
+  PRIMARY KEY (`idcourses`));
