@@ -68,7 +68,6 @@ insert into graduate.courses (course_name, course_number, c_hour, credit) values
 insert into graduate.courses (course_name, course_number, c_hour, credit) values ('한국의문화유산역사여행','11366','3','3');
 insert into graduate.courses (course_name, course_number, c_hour, credit) values ('동양고전의현대적이해','10886','3','3');
 insert into graduate.courses (course_name, course_number, c_hour, credit) values ('현대중국의이해','10887','3','3');
-insert into graduate.courses (course_name, course_number, c_hour, credit) values ('디지털스토리텔링의이해','10950','3','3');
 insert into graduate.courses (course_name, course_number, c_hour, credit) values ('키워드로읽는중국문화','11039','3','3');
 insert into graduate.courses (course_name, course_number, c_hour, credit) values ('도시⋅공간문화로읽는한국사','11332','3','3');
 insert into graduate.courses (course_name, course_number, c_hour, credit) values ('지구촌의사회복지','10905','3','3');
@@ -168,7 +167,6 @@ insert into graduate.courses (course_name, course_number, c_hour, credit) values
 insert into graduate.courses (course_name, course_number, c_hour, credit) values ('K-MOOC:애니메이션의이해','11240','3','3');
 insert into graduate.courses (course_name, course_number, c_hour, credit) values ('Introductory Psychology in Education','10952','3','3');
 insert into graduate.courses (course_name, course_number, c_hour, credit) values ('Introduction to Counseling','10962','3','3');
-insert into graduate.courses (course_name, course_number, c_hour, credit) values ('K-MOOC:빅데이터의세계,원리와응용','11237','3','3');
 insert into graduate.courses (course_name, course_number, c_hour, credit) values ('미래학입문','11131','3','3');
 insert into graduate.courses (course_name, course_number, c_hour, credit) values ('K-MOOC:음악과과학/기술','11239','3','3');
 insert into graduate.courses (course_name, course_number, c_hour, credit) values ('영양으로맛보는세계식문화','10083','3','3');
@@ -176,21 +174,6 @@ insert into graduate.courses (course_name, course_number, c_hour, credit) values
 insert into graduate.courses (course_name, course_number, c_hour, credit) values ('골프','10015','1.5','1');
 insert into graduate.courses (course_name, course_number, c_hour, credit) values ('테니스','10145','1.5','1');
 insert into graduate.courses (course_name, course_number, c_hour, credit) values ('호신의이론과실제','10179','3','3');
-insert into graduate.courses (course_name, course_number, c_hour, credit) values ('대학생을위한운동과영양','11086','3','3');
-insert into graduate.courses (course_name, course_number, c_hour, credit) values ('움직임을통한감정코칭','11088','3','3');
-insert into graduate.courses (course_name, course_number, c_hour, credit) values ('K-MOOC:건축으로읽는사회문화사','11217','3','3');
-insert into graduate.courses (course_name, course_number, c_hour, credit) values ('라틴어입문','10569','3','3');
-insert into graduate.courses (course_name, course_number, c_hour, credit) values ('Current Issues','10596','3','3');
-insert into graduate.courses (course_name, course_number, c_hour, credit) values ('Business and Technical English','10597','3','3');
-insert into graduate.courses (course_name, course_number, c_hour, credit) values ('Speech and Presentation','10641','3','3');
-insert into graduate.courses (course_name, course_number, c_hour, credit) values ('Cinema Arts and English','10643','3','3');
-insert into graduate.courses (course_name, course_number, c_hour, credit) values ('World Women through English','10709','3','3');
-insert into graduate.courses (course_name, course_number, c_hour, credit) values ('Research Writing','10811','3','3');
-insert into graduate.courses (course_name, course_number, c_hour, credit) values ('스페인어권세계의이해','10880','3','3');
-insert into graduate.courses (course_name, course_number, c_hour, credit) values ('Special Topics in English','11052','3','3');
-insert into graduate.courses (course_name, course_number, c_hour, credit) values ('고전과현대의만남','11251','3','3');
-insert into graduate.courses (course_name, course_number, c_hour, credit) values ('Literary Themes in Films','11310','3','3');
-insert into graduate.courses (course_name, course_number, c_hour, credit) values ('대학생을위한운동과영양','11086','3','3');
 insert into graduate.courses (course_name, course_number, c_hour, credit) values ('한국현대미술감상','10900','3','3');
 insert into graduate.courses (course_name, course_number, c_hour, credit) values ('Global Political Economy','11136','3','3');
 insert into graduate.courses (course_name, course_number, c_hour, credit) values ('K-MOOC:아동의신비한언어습득력-이중언어아동','11300','3','3');
