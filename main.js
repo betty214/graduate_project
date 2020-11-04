@@ -23,7 +23,7 @@ var app = http.createServer(function(request,response){
       if(queryData.major_number === undefined){
         db.query(`SELECT * FROM majors`, function(error,majors){
           var major_name = 'Welcome';
-          var major_number = 'Hello, Node.js';
+          var major_number = '안녕';
           var list = template.list(majors);
           var html = template.HTML(major_name, list,
             `<h2>${major_name}</h2>${major_number}`,
