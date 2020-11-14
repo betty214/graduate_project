@@ -20,6 +20,9 @@
   },
   "homepage": "https://github.com/web-n/Nodejs#readme",
   "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "http-proxy-middleware": "^1.0.6",
     "mysql": "^2.18.1",
     "sanitize-html": "^1.18.2"
   }
