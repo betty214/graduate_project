@@ -3,8 +3,9 @@ import hello.hellospring.domain.Member;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;
 import java.util.List;
-
+import java.util.Optional;
 import static org.assertj.core.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.*;
 
 class MemoryMemberRepositoryTest {
     MemoryMemberRepository repository = new MemoryMemberRepository();
@@ -51,4 +52,5 @@ class MemoryMemberRepositoryTest {
         //then
         assertThat(result.size()).isEqualTo(2);
     }
+
 }
