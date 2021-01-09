@@ -1,6 +1,7 @@
 package hello.hellospring;
 
 import hello.hellospring.repository.*;
+import hello.hellospring.service.MajorService;
 import hello.hellospring.service.MemberService;
 import hello.hellospring.service.TimetableService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,5 +34,13 @@ public class SpringConfig {
     @Bean
     public TimetableRepository timetableRepository() {
         return new JpaTimetableRepository(em);
+    }
+    @Bean
+    public MajorService majorService(){
+        return new MajorService(majorRepository());
+    }
+    @Bean
+    public MajorRepository majorRepository() {
+        return new JpaMajorRepository(em);
     }
 }
