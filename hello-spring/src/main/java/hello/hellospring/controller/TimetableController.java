@@ -21,4 +21,8 @@ public class TimetableController {
     public String list() {
         return "timetable/timetableList.html";
     }
+    @GetMapping(value = "/majors")
+    public String li() {
+        return "timetable/majorList.html";
+    }
 }

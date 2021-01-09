@@ -6,7 +6,7 @@ import javax.persistence.EntityManager;
 import java.util.List;
 import java.util.Optional;
 
-public class JpaTimetableRepository implements MemberRepository{
+public class JpaTimetableRepository implements TimetableRepository{
     private final EntityManager em;
 
     public JpaTimetableRepository(EntityManager em) {
@@ -16,14 +16,25 @@ public class JpaTimetableRepository implements MemberRepository{
         em.persist(timetable);
         return timetable;
     }
-    public Optional<TimeTable> getId(Long id) {
+
+    @Override
+    public Optional<TimeTable> findById(Long id) {
         TimeTable timetable = em.find(TimeTable.class, id);
         return Optional.ofNullable(timetable);
     }
-    public Optional<TimeTable> getCourse_name(String name) {
-        List<Member> result = em.createQuery("select m from time_table m where m.course_name = :couse_ name", Member.class)
+
+    @Override
+    public Optional<TimeTable> findByCName(String course_name) {
+        List<TimeTable> result = em.createQuery("select m from time_table m where m.course_name = :course_name", TimeTable.class)
                 .setParameter("course_name", course_name)
                 .getResultList();
         return result.stream().findAny();
     }
+
+
+    @Override
+    public List<TimeTable> findAll() {
+        return null;
+    }
+
 }
