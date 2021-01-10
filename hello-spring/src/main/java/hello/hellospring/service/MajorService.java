@@ -2,13 +2,14 @@ package hello.hellospring.service;
 
 import hello.hellospring.domain.Majors;
 import hello.hellospring.repository.MajorRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import javax.transaction.Transactional;
 import java.util.List;
 @Transactional
 public class MajorService {
     private final MajorRepository majorRepository;
-
+    @Autowired
     public MajorService(MajorRepository majorRepository){
         this.majorRepository=majorRepository;
     }

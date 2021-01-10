@@ -17,9 +17,14 @@
             </tr>
             </thead>
             <tbody>
-            <tr th:each="majors : ${majorList}">
+            <tr th:each="majors : ${majors}">
                 <td th:text="${majors.major_name}"></td>
                 <td th:text="${majors.major_number}"></td>
+                <td th:text="${majors.category}"></td>
+                <td th:text="${majors.recommend_time}"></td>
+                <td th:text="${majors.this_time}"></td>
+                <td th:text="${majors.professor_name}"></td>
+                <td th:text="${majors.division_number}"></td>
             </tr>
             </tbody>
         </table>

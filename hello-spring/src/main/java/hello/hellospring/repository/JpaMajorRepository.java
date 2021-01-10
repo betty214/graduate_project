@@ -27,7 +27,7 @@ public class JpaMajorRepository implements MajorRepository{
         return result.stream().findAny();
     }
     public List<Majors> findAll() {
-        return em.createQuery("select m from Major m", Majors.class)
+        return em.createQuery("select m from Majors m", Majors.class)
                 .getResultList();
     }
 }

@@ -16,8 +16,9 @@ public class MajorController {
         this.majorService = majorService;
     }
     @GetMapping(value = "/majors")
-    public String list() {
+    public String list(Model model) {
         List<Majors> majors= majorService.findMajor();
+        model.addAttribute("majors", majors);
         return "majors/majorList";
     }
 }
