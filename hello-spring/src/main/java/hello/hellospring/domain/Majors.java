@@ -6,6 +6,7 @@ import javax.persistence.*;
 public class Majors {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
     private String major_name;
     private int major_number;
     private String category;
@@ -14,6 +15,9 @@ public class Majors {
     private String professor_name;
     private int division_number;
 
+    public int getId() {
+        return id;
+    }
     public String getMajor_name() {
         return major_name;
     }

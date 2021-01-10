@@ -18,6 +18,7 @@
             </thead>
             <tbody>
             <tr th:each="majors : ${majors}">
+                <td th:text="${majors.id}"></td>
                 <td th:text="${majors.major_name}"></td>
                 <td th:text="${majors.major_number}"></td>
                 <td th:text="${majors.category}"></td>
