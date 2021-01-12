@@ -7,6 +7,6 @@ import java.util.Optional;
 
 public interface MajorRepository {
     Optional<Majors> findMajor(String major_name, int major_number, int division_number);
-    Optional<Majors> findByRT(int recommend_time);
+    List<Majors> findByRT(int recommend_time);
     List<Majors> findAll();
 }

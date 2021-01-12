@@ -6,15 +6,21 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import javax.transaction.Transactional;
 import java.util.List;
+import java.util.Optional;
+
 @Transactional
 public class MajorService {
     private final MajorRepository majorRepository;
-    @Autowired
     public MajorService(MajorRepository majorRepository){
         this.majorRepository=majorRepository;
     }
+    public void makeTimetable() {
 
+    }
     public List<Majors> findMajor() {
-        return majorRepository.findAll();
+        for(Majors value : majorRepository.findByRT(32)) {
+            System.out.println(value.getMajor_name());
+        }
+        return majorRepository.findByRT(32);
     }
 }

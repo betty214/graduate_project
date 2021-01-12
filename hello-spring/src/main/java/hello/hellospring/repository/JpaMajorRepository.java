@@ -20,11 +20,11 @@ public class JpaMajorRepository implements MajorRepository{
                 .getResultList();
         return result.stream().findAny();
     }
-    public Optional<Majors> findByRT(int recommend_time) {
+    public List<Majors> findByRT(int recommend_time) {
         List<Majors> result = em.createQuery("select m from Majors m where m.recommend_time = :recommend_time", Majors.class)
                 .setParameter("recommend_time", recommend_time)
                 .getResultList();
-        return result.stream().findAny();
+        return result;
     }
     public List<Majors> findAll() {
         return em.createQuery("select m from Majors m", Majors.class)
