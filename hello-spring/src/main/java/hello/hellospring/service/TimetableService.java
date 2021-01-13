@@ -17,24 +17,8 @@ public class TimetableService {
     /**
      * 회원가입
      */
-    public Long join(TimeTable timeTable) {
-        validateDuplicateTimetable(timeTable); //중복 회원 검증
-        timetableRepository.save(timeTable);
-        return timeTable.getId();
-    }
-    private void validateDuplicateTimetable(TimeTable timeTable) {
-        timetableRepository.findByCName(timeTable.getCourse_name())
-                .ifPresent(m -> {
-                    throw new IllegalStateException("이미 존재하는 회원입니다.");
-                });
-    }
-    /**
-     * 전체 회원 조회
-     */
+
     public List<TimeTable> findMembers() {
         return timetableRepository.findAll();
-    }
-    public Optional<TimeTable> findOne(Long timetableId) {
-        return timetableRepository.findById(timetableId);
     }
 }

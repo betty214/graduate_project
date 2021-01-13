@@ -1,8 +1,9 @@
 package hello.hellospring.service;
 
 import hello.hellospring.domain.Majors;
+import hello.hellospring.domain.TimeTable;
 import hello.hellospring.repository.MajorRepository;
-import org.springframework.beans.factory.annotation.Autowired;
+import hello.hellospring.repository.TimetableRepository;
 
 import javax.transaction.Transactional;
 import java.util.*;
@@ -10,9 +11,12 @@ import java.util.*;
 @Transactional
 public class MajorService {
     private final MajorRepository majorRepository;
-    public MajorService(MajorRepository majorRepository){
+    private final TimetableRepository timetableRepository;
+    public MajorService(MajorRepository majorRepository, TimetableRepository timetableRepository){
         this.majorRepository=majorRepository;
+        this.timetableRepository = timetableRepository;
     }
+
     public static ArrayList<String> table_name = new ArrayList<String>();
     public static ArrayList<String> table_time = new ArrayList<String>();
     public static ArrayList<String> table_professor = new ArrayList<String>();
@@ -25,7 +29,10 @@ public class MajorService {
     public static int day3 = 100;
     public static int time3 = 100;
     public static String[][] name_table = new String[100][6];
-
+    public Long join(TimeTable timeTable) {
+        timetableRepository.save(timeTable);
+        return timeTable.getId();
+    }
     public static void table_maker(String[] semi_table, int table2_number) {
         int flag=0;
         for (int i = 0; i < 6; i++) {
@@ -141,6 +148,14 @@ public class MajorService {
                         course_name = name_table[0][n];
                         bun = bunban_table[0][n];
                         prof_name = pname_table[0][n];
+                        TimeTable timeTable = new TimeTable();
+                        timeTable.setTable_number(1);
+                        timeTable.setWeek(day);
+                        timeTable.setPeriod(j+1);
+                        timeTable.setCourse_name(course_name);
+                        timeTable.setDivision_number(bun);
+                        timeTable.setProfessor_name(prof_name);
+                        join(timeTable);
                         System.out.println(1+" "+day+" "+(j+1)+" "+course_name+" "+bun+" "+prof_name);
                     }
                 }

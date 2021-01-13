@@ -18,21 +18,6 @@ public class JpaTimetableRepository implements TimetableRepository{
     }
 
     @Override
-    public Optional<TimeTable> findById(Long id) {
-        TimeTable timetable = em.find(TimeTable.class, id);
-        return Optional.ofNullable(timetable);
-    }
-
-    @Override
-    public Optional<TimeTable> findByCName(String course_name) {
-        List<TimeTable> result = em.createQuery("select m from time_table m where m.course_name = :course_name", TimeTable.class)
-                .setParameter("course_name", course_name)
-                .getResultList();
-        return result.stream().findAny();
-    }
-
-
-    @Override
     public List<TimeTable> findAll() {
         return null;
     }

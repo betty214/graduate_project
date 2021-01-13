@@ -4,7 +4,6 @@ import hello.hellospring.repository.*;
 import hello.hellospring.service.MajorService;
 import hello.hellospring.service.MemberService;
 import hello.hellospring.service.TimetableService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -37,7 +36,7 @@ public class SpringConfig {
     }
     @Bean
     public MajorService majorService(){
-        return new MajorService(majorRepository());
+        return new MajorService(majorRepository(), timetableRepository());
     }
     @Bean
     public MajorRepository majorRepository() {
