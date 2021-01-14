@@ -1,6 +1,8 @@
 package hello.hellospring.repository;
 
 import hello.hellospring.domain.Majors;
+import hello.hellospring.domain.User;
+import hello.hellospring.domain.User1_dropmajor;
 
 import javax.persistence.EntityManager;
 import java.util.List;
@@ -23,6 +25,16 @@ public class JpaMajorRepository implements MajorRepository{
     public List<Majors> findByRT(int recommend_time) {
         List<Majors> result = em.createQuery("select m from Majors m where m.recommend_time = :recommend_time", Majors.class)
                 .setParameter("recommend_time", recommend_time)
+                .getResultList();
+        return result;
+    }
+    public List<User> findNoTime() {
+        List<User> result = em.createQuery("select m from User m", User.class)
+                .getResultList();
+        return result;
+    }
+    public List<User1_dropmajor> findNoThing() {
+        List<User1_dropmajor> result = em.createQuery("select m from User1_dropmajor m", User1_dropmajor.class)
                 .getResultList();
         return result;
     }
