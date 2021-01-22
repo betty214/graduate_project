@@ -1,2 +1,4 @@
 hello/hellospring/HelloSpringApplicationTests.java
  hello.hellospring.HelloSpringApplicationTests
+hello/hellospring/service/MemberServiceIntegrationTest.java
+ hello.hellospring.service.MemberServiceIntegrationTest

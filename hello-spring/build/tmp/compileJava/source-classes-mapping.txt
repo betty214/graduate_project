@@ -1,4 +1,44 @@
+hello/hellospring/domain/User.java
+ hello.hellospring.domain.User
+hello/hellospring/repository/JpaTimetableRepository.java
+ hello.hellospring.repository.JpaTimetableRepository
+hello/hellospring/repository/MajorRepository.java
+ hello.hellospring.repository.MajorRepository
+hello/hellospring/controller/MemberController.java
+ hello.hellospring.controller.MemberController
+hello/hellospring/SpringConfig.java
+ hello.hellospring.SpringConfig
+hello/hellospring/domain/Member.java
+ hello.hellospring.domain.Member
+hello/hellospring/domain/Majors.java
+ hello.hellospring.domain.Majors
+hello/hellospring/domain/User1_dropmajor.java
+ hello.hellospring.domain.User1_dropmajor
+hello/hellospring/WebConfig.java
+ hello.hellospring.WebConfig
+hello/hellospring/repository/JpaMemberRepository.java
+ hello.hellospring.repository.JpaMemberRepository
+hello/hellospring/service/TimetableService.java
+ hello.hellospring.service.TimetableService
+hello/hellospring/controller/MemberForm.java
+ hello.hellospring.controller.MemberForm
+hello/hellospring/repository/JpaMajorRepository.java
+ hello.hellospring.repository.JpaMajorRepository
+hello/hellospring/controller/HomeController.java
+ hello.hellospring.controller.HomeController
+hello/hellospring/repository/TimetableRepository.java
+ hello.hellospring.repository.TimetableRepository
+hello/hellospring/service/MemberService.java
+ hello.hellospring.service.MemberService
+hello/hellospring/repository/MemberRepository.java
+ hello.hellospring.repository.MemberRepository
+hello/hellospring/controller/MajorController.java
+ hello.hellospring.controller.MajorController
 hello/hellospring/HelloSpringApplication.java
  hello.hellospring.HelloSpringApplication
-hello/hellospring/controller/HelloController.java
- hello.hellospring.controller.HelloController
+hello/hellospring/domain/TimeTable.java
+ hello.hellospring.domain.TimeTable
+hello/hellospring/controller/TestController.java
+ hello.hellospring.controller.TestController
+hello/hellospring/service/MajorService.java
+ hello.hellospring.service.MajorService

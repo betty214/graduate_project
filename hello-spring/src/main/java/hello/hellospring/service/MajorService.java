@@ -96,7 +96,7 @@ public class MajorService {
                         timeTable.setDivision_number(bun);
                         timeTable.setProfessor_name(prof_name);
                         join(timeTable);
-                        //System.out.println((m+1) + " " + day + " " + (j + 1) + " " + course_name + " " + bun + " " + prof_name);
+                        System.out.println((m+1) + " " + day + " " + (j + 1) + " " + course_name + " " + bun + " " + prof_name);
                     }
                 }
             }
